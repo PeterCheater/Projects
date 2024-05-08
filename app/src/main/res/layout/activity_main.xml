@@ -147,7 +147,8 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="@string/roll_dice"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/btn_stats"
@@ -158,7 +159,8 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="@string/view_stats"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle" />
 
         </LinearLayout>
 

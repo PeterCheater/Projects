@@ -1,9 +1,5 @@
 package com.petercheater.dice;
 
-import android.annotation.SuppressLint;
-
-import androidx.annotation.NonNull;
-
 import java.util.ArrayList;
 
 public class Player {

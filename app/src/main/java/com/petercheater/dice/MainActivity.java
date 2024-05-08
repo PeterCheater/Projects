@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         stats = findViewById(R.id.btn_stats);
         logout = findViewById(R.id.btn_logout);
 
-        db = openOrCreateDatabase("DiceGame", MODE_PRIVATE, null);
-        mp = MediaPlayer.create(this, R.raw.dice_roll);
+        db = openOrCreateDatabase("DiceGame", MODE_PRIVATE, null); // open the database
+        mp = MediaPlayer.create(this, R.raw.dice_roll); // load the sound file
 
         Intent i = getIntent(); // Retrieve the Intent that started this activity
 
@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
         int wins = i.getIntExtra("wins", 0);
         int losses = i.getIntExtra("losses", 0);
 
-        player = new Player(username, chips, wins, losses); // create a new instance with the values
-        random = new Random();
+        player = new Player(username, chips, wins, losses); // create a new player instance with the retrieved values
+        random = new Random(); // randomizer
         firstRun();
 
         roll.setOnClickListener(v -> {
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         logout.setOnClickListener(v -> {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(this); // confirmation popup
             builder.setMessage("Are you sure you want to log out?")
                     .setPositiveButton("Yes", (dialog, which) -> {
                         finish(); // user confirmed, return to the login form
