@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Dice</string>
+    <string name="roll_dice">Roll Dice</string>
+    <string name="dice_game">Dice Game</string>
+    <string name="player">Player</string>
+    <string name="cpu">CPU</string>
+    <string name="dice_of_player">Dice of player</string>
+    <string name="dice_of_cpu">Dice of CPU</string>
+    <string name="rolling">Rolling…</string>
+    <string name="bet_amount">Bet amount</string>
+    <string name="bet_amount_null">Bet amount: 0/0</string>
+    <string name="image_of_two_dices">image of two dices</string>
+    <string name="welcome_to_the_ndice_game">Welcome To The\nDice Game</string>
+    <string name="enter_your_credentials">Enter your credentials</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="user_icon_image">user icon image</string>
+    <string name="password_icon_image">password icon image</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="check_db">Check DB</string>
+    <string name="view_stats">View Stats</string>
+    <string name="your_stats">Your Stats</string>
+    <string name="goBack">Return\nto Game</string>
+    <string name="reset">Reset\nStats</string>
+    <string name="log_out">Log Out</string>
+</resources>
