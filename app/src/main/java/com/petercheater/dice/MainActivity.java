@@ -132,6 +132,10 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("DefaultLocale")
     private void firstRun() {
+        if (player.getChips() == 0) {
+            player.setChips(100);
+            Toast.makeText(this, "Your chips have been replenished", Toast.LENGTH_LONG).show();
+        }
         player_name.setText(player.getName()); // display the player name in the TextView
         bet_amount.setText(String.format("Bet amount: %d/%d", bet_bar.getProgress(), player.getChips()));
         bet_bar.setMax(player.getChips()); // update the maximum bet allowed according to the chips amount left
